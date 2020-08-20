@@ -1,9 +1,12 @@
 ::-webkit-scrollbar {
     width: 5px;               /* width of the entire scrollbar */
+    height: 5px;   
 }
-*:hover::-webkit-scrollbar-thumb {
-    background-color: #c7c7c7;    /* color of the scroll thumb */
-    border-radius: 50px;       /* roundness of the scroll thumb */
+body:hover::-webkit-scrollbar-thumb, 
+.content:hover::-webkit-scrollbar-thumb,
+.component-list:hover::-webkit-scrollbar-thumb {
+    background-color: #c7c7c7;    
+    border-radius: 50px;
 }
 .h-70{
     height: 70px;
@@ -250,17 +253,19 @@ nav{
 
 .content{
     min-height: 400px;
+    width: 1040px;
+    overflow-x: auto;
     display: flex;
     justify-content: space-between;
 }
 .component{
-    height: 400px;
-    overflow-y: auto;
+    max-height: 450px;
 }
 .component-list{
+    overflow-y: auto;
     max-width: 250px;
     width: 180px;
-    height: 400px;
+    height: 350px;
     background-image: linear-gradient(#fff,#00000000);
 }
 .list-contains{
@@ -288,4 +293,11 @@ nav{
     border-radius: 50px;
     z-index: 5;
     color: #7a7a7a;
+}
+
+
+@media (min-width: 1380px){
+    .component-list{
+        width: 230px;
+    }
 }

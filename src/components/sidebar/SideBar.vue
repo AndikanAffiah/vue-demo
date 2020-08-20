@@ -14,7 +14,7 @@
         </a>
       </div>
       <div class="d-flex justify-content-center my-2">
-        <a class="icon-container">
+        <a class="icon-container" href="">
           <span class="icon link-icon"></span>
         </a>
       </div>
